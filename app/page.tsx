@@ -8,33 +8,33 @@ export default function Home() {
         {/* Logo & Badge */}
 
         <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-          Ankara'nın Yeni Nesil Tadilat Platformu
+          Premium Dijital Müteahhitlik Platformu
         </div>
 
         {/* Hero Title */}
         <h1 className="text-5xl font-extrabold tracking-tight text-foreground sm:text-7xl">
-          Yapı Kültürünü <br className="hidden sm:block" />
-          <span className="text-primary">Teknolojiyle</span> İnşa Ediyoruz.
+          Tadilatın <br className="hidden sm:block" />
+          <span className="text-primary">Şeffaf</span> Geleceği.
         </h1>
 
         {/* Hero Description */}
         <p className="mx-auto max-w-2xl text-xl font-medium leading-relaxed text-muted-foreground">
-          Usta-çırak geleneğinden gelen tecrübeyi, modern mühendislik ve veri analitiği ile birleştiriyoruz. Şeffaf, hesaplı ve güvenilir tadilat süreçleri.
+          Sürpriz maliyetler ve belirsiz süreçler bitti. <span className="text-foreground font-semibold">Şeffaf Kasa</span> ile harcamalarınızı kuruşu kuruşuna takip edin, <span className="text-foreground font-semibold">Canlı Takip</span> ile evinizin dönüşümünü izleyin.
         </p>
 
         {/* CTA Buttons */}
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
             className="flex h-14 min-w-[180px] items-center justify-center bg-primary px-8 text-lg font-bold text-primary-foreground shadow-lg transition-transform hover:scale-105 active:scale-95"
-            href="/hakkimizda"
+            href="/iletisim"
           >
-            Bizi Tanıyın
+            Hemen Teklif Al
           </a>
           <a
             className="flex h-14 min-w-[180px] items-center justify-center border-2 border-foreground px-8 text-lg font-bold text-foreground transition-all hover:bg-foreground hover:text-background"
             href="/calisma-alanimiz"
           >
-            Neler Yapıyoruz?
+            Süreç Nasıl İşler?
           </a>
         </div>
       </div>

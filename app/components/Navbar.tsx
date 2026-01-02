@@ -32,6 +32,9 @@ const Navbar = () => {
                     <Link href="/iletisim" className="px-5 py-2.5 bg-primary text-primary-foreground text-sm font-bold rounded-none hover:opacity-90 transition-opacity">
                         TEKLİF AL
                     </Link>
+                    <Link href="/login" className="px-5 py-2.5 border border-primary text-primary text-sm font-bold rounded-none hover:bg-primary hover:text-primary-foreground transition-colors flex items-center gap-2">
+                        <span>🔒</span> GİRİŞ YAP
+                    </Link>
                 </div>
 
                 {/* Mobile Toggle */}

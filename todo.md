@@ -26,38 +26,36 @@ Sıradan bir developer sadece "Project" tablosu açar. Senior, işin mantığın
 [ ] Quotes Table: Dinamik fiyat teklifleri için JSONB kolon yapısı.
 
 3. Faz: Backend API (src/app/api) - Business Logic
-Burada "CRUD" yapmıyoruz, "İş Süreci" yönetiyoruz.
+Here "Workflows" are managed, not just "CRUD".
 
-[ ] GET /api/calculate: Frontend'den gelen m2 ve malzeme kalitesine göre (Ankara piyasa verilerini içeren bir JSON ile çarpıp) anlık fiyat dönen logic.
+[CANSELLED] GET /api/calculate: Automatic pricing is risky for trust. Replaced by "Wizard Quote Form" for personalized service.
 
-[ ] POST /api/projects: Yeni bir tadilat işi oluşturulduğunda otomatik "Müşteri Erişim Kodu" üreten fonksiyon.
+[ ] POST /api/projects: Function generating "Customer Access Code" for new jobs.
 
-[ ] PATCH /api/admin/update-progress: Babanın şantiyeden fotoğraf yükleyip "Boya %100 bitti" diyebileceği yetkili endpoint'i.
+[ ] PATCH /api/admin/update-progress: Endpoint for uploading photos and updating progress (currently manual/mock).
 
-[ ] Webhook Integration: Form doldurulduğunda senin ve babanın WhatsApp'ına "Yeni İş Talebi!" bildirimi düşüren entegrasyon.
+[ ] Webhook Integration: WhatsApp notification integration (Check detailed feasibility first).
 
 4. Faz: Frontend Architecture (Modern UI)
-[ ] Shadcn/UI & Tailwind: Kurumsal, ağırbaşlı ama modern bir tema (Slate & Emerald renk paleti güven verir).
+[ ] Shadcn/UI & Tailwind: Clean, modern corporate theme (Slate & Emerald).
 
-[ ] Hybrid Rendering Strategy: - [ ] Landing page & Blog -> ISR (Incremental Static Regeneration) (Hız ve SEO için).
+[ ] Hybrid Rendering Strategy: ISR for Landing/Blog, Client-side for Dashboard.
 
-[ ] Müşteri Paneli -> Client-side with SWR/TanStack Query (Anlık veri takibi için).
+[x] Wizard Quote Form: Multi-step, guiding form replacing the custom calculator component.
 
-[ ] Custom Calculator Component: Kullanıcının sürükleyerek oda sayısını seçtiği, fiyatın altta "odometre" gibi döndüğü yüksek UX'li bileşen.
-
-[ ] Image Optimization: Şantiye fotoğrafları büyük olur. next/image ve Cloudinary/Uploadcare kullanarak LCP skorunu koru.
+[ ] Image Optimization: Critical for site photos.
 
 5. Faz: SEO & Ankara Lokalizasyonu
-[ ] Dynamic Sitemap: Her biten proje için bir sayfa oluştur (Örn: "Çankaya Villa Tadilatı - YapYap").
+[ ] Dynamic Sitemap: Pages for completed projects.
 
-[ ] Schema.org Markup: Google'a bu sitenin bir "LocalBusiness" olduğunu anlatan JSON-LD kodlarını ekle.
+[ ] Schema.org Markup: LocalBusiness JSON-LD.
 
-[ ] Performance Audit: Lighthouse skorlarını 95+ bandına çek.
+[ ] Performance Audit: Target 95+.
 
 6. Faz: Müşteri Deneyimi (The "Wow" Factor)
-[ ] Live Project Tracker: Müşterinin evinin tadilat aşamasını bir "Progress Bar" ile gördüğü sayfa.
+[x] Live Project Tracker: "Transparent Vault" Dashboard with Cost & Timeline tracking (Implemented v1).
 
-[ ] PDF Generator: Tekliflerin otomatik antetli kağıt şeklinde PDF olarak indirilebilmesi.
+[ ] PDF Generator: Downloadable quotes.
 
 🛡️ Senior Tavsiyesi: "Neden Çökeriz?"
 State Management: Çok karmaşık bir global state'e girme. Müşteri paneli için URL-based state veya Zustand yeterli.

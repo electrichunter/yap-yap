@@ -20,48 +20,48 @@ export default function WorkPage() {
                     </p>
                 </div>
 
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
 
                     {/* Card 1 */}
-                    <div className="group border border-border bg-card hover:bg-muted/30 transition-colors p-8 flex flex-col justify-between min-h-[300px]">
-                        <div className="space-y-4">
-                            <div className="w-12 h-12 bg-primary/10 text-primary flex items-center justify-center text-2xl">🏠</div>
-                            <h3 className="text-2xl font-bold text-foreground">Anahtar Teslim Tadilat</h3>
+                    <div className="group border border-border bg-card hover:bg-muted/30 transition-colors p-8 flex flex-col justify-between min-h-[250px] relative overflow-hidden">
+                        <div className="absolute top-0 right-0 p-4 opacity-10 text-9xl font-bold text-primary select-none pointer-events-none">1</div>
+                        <div className="space-y-4 relative z-10">
+                            <h3 className="text-2xl font-bold text-foreground">Uçtan Uca Dijital Yönetim</h3>
                             <p className="text-muted-foreground leading-relaxed">
-                                Evinizi baştan aşağı yeniliyoruz. Yıkım, hafriyat, tesisat, boya ve montaj. Tek muhatap, tam güvence.
+                                Klasik müteahhitlik bitti. Projenizi "Dijital Müteahhit" yönetsin. Malzeme tedariğinden usta koordinasyonuna kadar tüm süreç tek bir panel üzerinden şeffafça yürütülür.
                             </p>
                         </div>
                     </div>
 
                     {/* Card 2 */}
-                    <div className="group border border-border bg-card hover:bg-muted/30 transition-colors p-8 flex flex-col justify-between min-h-[300px]">
-                        <div className="space-y-4">
-                            <div className="w-12 h-12 bg-primary/10 text-primary flex items-center justify-center text-2xl">🏢</div>
-                            <h3 className="text-2xl font-bold text-foreground">Eski Daire Yenileme</h3>
+                    <div className="group border border-border bg-card hover:bg-muted/30 transition-colors p-8 flex flex-col justify-between min-h-[250px] relative overflow-hidden">
+                        <div className="absolute top-0 right-0 p-4 opacity-10 text-9xl font-bold text-primary select-none pointer-events-none">2</div>
+                        <div className="space-y-4 relative z-10">
+                            <h3 className="text-2xl font-bold text-foreground">Şeffaf Kasa (Transparent Vault)</h3>
                             <p className="text-muted-foreground leading-relaxed">
-                                Eski daireleri alıp, A'dan Z'ye yenileyerek modern ve güvenli yaşam alanlarına dönüştürüyoruz.
+                                "Para nereye gitti?" derdine son. Alınan çimentodan işçilik giderine kadar her kuruşu, faturasıyla birlikte anlık olarak kendi panelinizden takip edin.
                             </p>
                         </div>
                     </div>
 
                     {/* Card 3 */}
-                    <div className="group border border-border bg-card hover:bg-muted/30 transition-colors p-8 flex flex-col justify-between min-h-[300px]">
-                        <div className="space-y-4">
-                            <div className="w-12 h-12 bg-primary/10 text-primary flex items-center justify-center text-2xl">💻</div>
-                            <h3 className="text-2xl font-bold text-foreground">Proje Danışmanlığı</h3>
+                    <div className="group border border-border bg-card hover:bg-muted/30 transition-colors p-8 flex flex-col justify-between min-h-[250px] relative overflow-hidden">
+                        <div className="absolute top-0 right-0 p-4 opacity-10 text-9xl font-bold text-primary select-none pointer-events-none">3</div>
+                        <div className="space-y-4 relative z-10">
+                            <h3 className="text-2xl font-bold text-foreground">Canlı Saha Akışı</h3>
                             <p className="text-muted-foreground leading-relaxed">
-                                "Bu kaça çıkar?" sorusunun cevabı. U    zman destekli maliyet analizi ve fizibilite raporlaması.
+                                İşin başında beklemenize gerek yok. Ustalarımız her aşamayı fotoğraflayıp sisteme yükler. Siz kahvenizi içerken evinizin değişimini timeline üzerinden izleyin.
                             </p>
                         </div>
                     </div>
 
                     {/* Card 4 */}
-                    <div className="group border border-border bg-card hover:bg-muted/30 transition-colors p-8 flex flex-col justify-between min-h-[300px]">
-                        <div className="space-y-4">
-                            <div className="w-12 h-12 bg-primary/10 text-primary flex items-center justify-center text-2xl">🛋️</div>
-                            <h3 className="text-2xl font-bold text-foreground">İç Mimari Tasarım</h3>
+                    <div className="group border border-border bg-card hover:bg-muted/30 transition-colors p-8 flex flex-col justify-between min-h-[250px] relative overflow-hidden">
+                        <div className="absolute top-0 right-0 p-4 opacity-10 text-9xl font-bold text-primary select-none pointer-events-none">4</div>
+                        <div className="space-y-4 relative z-10">
+                            <h3 className="text-2xl font-bold text-foreground">Garantili & Sigortalı</h3>
                             <p className="text-muted-foreground leading-relaxed">
-                                Fonksiyonel ve estetik mekanlar. 3D modelleme ile işe başlamadan sonucunu görün.
+                                Platform üzerinden yapılan tüm işler YapYap garantisi altındadır. Sözleşmeye sadık kalınır, zamanında teslim edilir. Sürpriz yok, güven var.
                             </p>
                         </div>
                     </div>
